@@ -45,4 +45,19 @@ describe("Join As Member", function(){
 
     });
 
+    it("Select Email Preference", function(){
+
+        var cbEmailPref = element(by.id("checkbox"));
+
+        cbEmailPref.click();
+
+        expect(cbEmailPref.isSelected()).toBe(false);
+
+    });
+
+    it("Submit Form", function(){
+
+        element(by.id("register-button")).click();
+    });
+
 });
