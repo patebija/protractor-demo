@@ -5,10 +5,18 @@ var Jasmine2HtmlReporter = require('C:/Users/Bijan/AppData/Roaming/npm/node_modu
 exports.config = {
   directConnect: true,
 
-  // Capabilities to be passed to the webdriver instance.
   capabilities: {
-    'browserName': 'chrome'
+    browserName: 'chrome',
+  
+    chromeOptions: {
+       args: [ "--headless", "--disable-gpu", "--window-size=800,600" ]
+     }
   },
+
+  // multiCapabilities:[{
+  //   'browserName': 'chrome'},
+  //   {'browserName': 'firefox'
+  // }],
 
   // Framework to use. Jasmine is recommended.
   framework: 'jasmine',
