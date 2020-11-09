@@ -8,7 +8,7 @@ describe("Login User", function(){
 
     it("Click Login", function(){
 
-      element(by.id("sign-in")).click();
+      element(by.id("sign-i")).click();
 
     });
     
